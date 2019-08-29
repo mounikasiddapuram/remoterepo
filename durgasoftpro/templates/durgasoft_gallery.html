@@ -1,0 +1,43 @@
+{%  extends 'base.html' %}
+{% load staticfiles %}
+
+<html>
+<head>
+    <title> Gallery Page </title>
+</head>
+<body>
+{% block content %}
+    <style>
+    .row{
+        margin: 20px;
+    }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'images/Hydrangeas.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/Chrysanthemum.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'images/Tulips.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/Desert.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'images/Jellyfish.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/Lighthouse.jpg' %}" style="width: 500px; height: 300px">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
